@@ -1,13 +1,12 @@
+#!/bin/bash
+
 # guess the number of files
 
 # definition of the function
 
 function guess_number {
 
-	if [[ $nub -eq $(ls | wc -l) ]]
-	then
-		echo "Congratulation, you find the correct number"
-	elif [[ $nub -lt $(ls | wc -l) ]]
+	if [[ $nub -lt $(ls | wc -l) ]]
 	then
 		echo "your number is smaller than the answer"
 		read nub
