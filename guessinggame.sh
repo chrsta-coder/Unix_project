@@ -14,7 +14,6 @@ function guess_number {
 		echo "your number is bigger than the answer"
 		read nub
 	fi
-
 }
 
 #program begin
@@ -24,7 +23,6 @@ read nub
 
 while [[ $nub != $(ls | wc -l) ]]
 do
-
 	guess_number
 done
 
